@@ -8,8 +8,8 @@ void fibonacci(unsigned long long count);
 
 int main(){
     unsigned long long userInput = 0;
-    std::cout << "Enter a random number: \n";
-    std::cin >> userInput;
+    cout << "Enter a random number: \n";
+    cin >> userInput;
     fibonacci(userInput);
     quiz();
 
@@ -19,17 +19,17 @@ int main(){
 
 void quiz(){
     string userAnswer = "";
-    std::cout << "whats the name of the sequence? \n";
+    cout << "whats the name of the sequence? \n";
 
-    std::cin >> userAnswer;
+    cin >> userAnswer;
 
     string correctAnswer = "fibonacci";
 
     if(userAnswer == correctAnswer){
-        std::cout << "Correct! \n";
+        cout << "Correct! \n";
     }
     else{
-        std::cout << "Incorrect! \n";
+        cout << "Incorrect! \n";
     }
 }
 
